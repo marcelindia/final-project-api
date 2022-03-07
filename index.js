@@ -4,7 +4,6 @@ const { connectDb } = require("./src/ConnectDb");
 const PORT = process.env.PORT || 3000;
 // const { createUser, getUser, updateUser } = require("./src/Users");
 const { getRecipe, createRecipe } = require("./src/Recipes");
-const { getRecipeByIngredient } = require("./src/RecipeByIngredient");
 
 const app = express();
 app.use(express.json());
