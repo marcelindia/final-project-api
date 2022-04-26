@@ -1,15 +1,6 @@
 const { connectDb } = require("./ConnectDb");
 const { response } = require("express");
 
-exports.createRecipeComment = (req, res) => {
-  const newRecipeComment = req.body;
-  const db = connectDb();
-  db.collection("recipes")
-    .add(newRecipe)
-    .then((doc) => res.status(201).send(doc.id))
-    .catch((err) => res.status(500).send(err));
-};
-
 exports.getRecipe = (req, res) => {
   const db = connectDb();
   const { ing } = req.query;

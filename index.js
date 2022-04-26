@@ -2,11 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const { connectDb } = require("./src/ConnectDb");
 const PORT = process.env.PORT || 3000;
-// const { createUser, getUser, updateUser } = require("./src/Users");
-
-// app.post("/users", createUser);
-// app.get("/users", getUser);
-// app.patch("/users/:userId", updateUser);
 
 const {
   getRecipe,
